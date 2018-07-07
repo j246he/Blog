@@ -41,79 +41,36 @@
     <main>
     
     <div class="notecp">
-      <h2>Two methods to implement animation effect</h2>
+      <h2>How to show my own pages in the GitHub?</h2>
       study notes&nbsp;&nbsp;&nbsp;&nbsp;
-      <time>2018-07-05</time>
-
+      <time>2018-07-06</time>
     </div>
     
+if we don’t buy our own domain, we can use GitHub to show the pages.<br>
+My computer is win10 and i have installed bash in my laptop.<br>
 
-First method is adding the animation attribute in css3. The code likes that:<br>
-<code>
-.modalpic{<br>
-&nbsp;-webkit-animation: first 0.5s;<br>
-&nbsp;-o-animation: first 0.5s;<br>
-&nbsp;animation: first 0.5s;<br>
-}<br>
-@keyframes first{<br>
-&nbsp;from{transform: scale(0.5);}<br>
-&nbsp;to{transform: scale(1);}<br>
-}<br>
-</code>
-
-Animation attribute has 6 attributes:<br>
 <ul class="st">
-<li>animation-name<br></li>
-<li>animation-duration<br></li>
-<li>animation-timing-function<br></li>
-<li>animation-delay<br></li>
-<li>animation-iteration-count<br></li>
-<li>animation-direction<br></li>
-</ul>
-Another method is to use ScrollReveal.js.<br>
-1、introduce the js file<br>
-<code>
-&lt;script src="js/scrollReveal.js"&gt;&lt;/script&gt;<br>
-</code>
+  <li>First, create a new repository with nothing in the repository in your GitHub.<br></li>
+  <li>Then, run the terminal and bash.<br></li>
+  <li>Find the dictionary where you want to clone the repository and run the git clone url.<br></li>
+  <li>Copy the html, css, and other files in the dictionary.<br></li>
+  <li>Run the command in the terminal.<br>
+    <code>
+Git add --all<br>
+Git commit -m “melody”<br>
+Git push origin master<br>
+    </code>
 
-2、change in HTML file<br>
-The elements which want animation must add data-sroll-reveal attribute, like:<br>
-<code>
-&lt;div data-scroll-reveal="enter left and move 50px over 1.33s"&gt;blog&lt;/div&gt;<br>
-&lt;div data-scroll-reveal="enter from the bottom after 1s"&gt;ScrollReveal&lt;/div>&gt;<br>
-&lt;div data-scroll-reveal="wait 2.5s and then ease-in-out 100px"&gt;ScrollReveal&lt;/div&gt;<br>
-</code>
-
-
-3、JavaScript<br>
-<code>
-&lt;script&gt;<br>
-&nbsp;if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){<br>
-&nbsp;&nbsp;(function(){<br>
-&nbsp;&nbsp;&nbsp;window.scrollReveal = new scrollReveal({reset: true});<br>
-&nbsp;&nbsp;})();<br>
-&nbsp;};<br>
-&lt;/script&gt;<br>
-</code>
-
-4、data-scroll-reveal attribute<br>
-We can define data-scroll-reveal attribute ourselves. These are the keywords and values of the attributes.<br>
-<ul class="st">
-  <li>
-    enter: <br>
-    Shows the initial direction<br>
-    value: top | right | bottom | left<br>
+</li>
+  <li>And then check if there are files in the GitHub in the website.<br></li>
+  <li>Find setting tag and click.<br>
+    <img src="img/setting.png">
   </li>
-  <li>move:<br>
-    Shows the distance the element need to move<br>
-    value: number(px)<br></li>
-  <li>over:<br>
-    Duration of the animation<br>
-    value: number(s)
-    <br></li>
-  <li>after/wait:<br>
-The delay of the animation<br>
-value: number(s)<br></li>
+  <li>Scroll down and find GitHub Pages.<br>
+    <img src="img/master.png"></li>
+  <li>Choose the none to master branch and then click save.<br></li>
+  <li>Then your website is done.<br></li>
+  
 </ul>
 
 
@@ -122,18 +79,12 @@ value: number(s)<br></li>
 
 
 
-We can also add some statements in the data-scroll-reveal attribute and scrollReveal.js supports these statements:<br>
-<ul class="st">
-  <li>from</li>
-  <li>the</li>
-  <li>and</li>
-  <li>then</li>
-  <li>but</li>
-  <li>with</li>
-</ul>
+
+
+
 <section class="page">
-<a href="">Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="note2.html">Next</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="note1.html">Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="">Next</a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="study.html">Back to Content</a>
 </section>
 
