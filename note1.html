@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Melody Blog-Articles</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/blog.css">
+    <script src="js/scrollReveal.js"></script>
+  </head>
+  <body>
+    <header>
+          <h1 class="left" data-scroll-reveal="enter right over 1s">Melody Blog-Articles</h1>
+          <ul class="nav nav-pills justify-content-end">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="study.html">Study Notes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Projects.html">Projects</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Life Recordings</a>
+              <div class="dropdown-menu">
+              <a class="dropdown-item" href="Life.html">Volunteer Activities</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="article.html">My Articles</a>
+              </div>
+            </li>
+            
+          
+          </ul>
+          
+    </header>
+    
+    <main>
+    
+    <div class="notecp">
+      <h2>Two methods to implement animation effect</h2>
+      study notes&nbsp;&nbsp;&nbsp;&nbsp;
+      <time>2018-07-05</time>
+
+    </div>
+    
+
+First method is adding the animation attribute in css3. The code likes that:<br>
+<code>
+.modalpic{<br>
+&nbsp;-webkit-animation: first 0.5s;<br>
+&nbsp;-o-animation: first 0.5s;<br>
+&nbsp;animation: first 0.5s;<br>
+}<br>
+@keyframes first{<br>
+&nbsp;from{transform: scale(0.5);}<br>
+&nbsp;to{transform: scale(1);}<br>
+}<br>
+</code>
+
+Animation attribute has 6 attributes:<br>
+<ul class="st">
+<li>animation-name<br></li>
+<li>animation-duration<br></li>
+<li>animation-timing-function<br></li>
+<li>animation-delay<br></li>
+<li>animation-iteration-count<br></li>
+<li>animation-direction<br></li>
+</ul>
+Another method is to use ScrollReveal.js.<br>
+1、introduce the js file<br>
+<code>
+&lt;script src="js/scrollReveal.js"&gt;&lt;/script&gt;<br>
+</code>
+
+2、change in HTML file<br>
+The elements which want animation must add data-sroll-reveal attribute, like:<br>
+<code>
+&lt;div data-scroll-reveal="enter left and move 50px over 1.33s"&gt;blog&lt;/div&gt;<br>
+&lt;div data-scroll-reveal="enter from the bottom after 1s"&gt;ScrollReveal&lt;/div>&gt;<br>
+&lt;div data-scroll-reveal="wait 2.5s and then ease-in-out 100px"&gt;ScrollReveal&lt;/div&gt;<br>
+</code>
+
+
+3、JavaScript<br>
+<code>
+&lt;script&gt;<br>
+&nbsp;if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){<br>
+&nbsp;&nbsp;(function(){<br>
+&nbsp;&nbsp;&nbsp;window.scrollReveal = new scrollReveal({reset: true});<br>
+&nbsp;&nbsp;})();<br>
+&nbsp;};<br>
+&lt;/script&gt;<br>
+</code>
+
+4、data-scroll-reveal attribute<br>
+We can define data-scroll-reveal attribute ourselves. These are the keywords and values of the attributes.<br>
+<ul class="st">
+  <li>
+    enter: <br>
+    Shows the initial direction<br>
+    value: top | right | bottom | left<br>
+  </li>
+  <li>move:<br>
+    Shows the distance the element need to move<br>
+    value: number(px)<br></li>
+  <li>over:<br>
+    Duration of the animation<br>
+    value: number(s)
+    <br></li>
+  <li>after/wait:<br>
+The delay of the animation<br>
+value: number(s)<br></li>
+</ul>
+
+
+
+
+
+
+
+We can also add some statements in the data-scroll-reveal attribute and scrollReveal.js supports these statements:<br>
+<ul class="st">
+  <li>from</li>
+  <li>the</li>
+  <li>and</li>
+  <li>then</li>
+  <li>but</li>
+  <li>with</li>
+</ul>
+<section class="page">
+<a href="">Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="">Next</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="study.html">Back to Content</a>
+</section>
+
+
+    </main><!-- .row -->
+    <footer>
+      <p>Contact me: hejiatong.melody.jlu@gmail.com
+        <a href="https://github.com/j246he" target="_blank">GitHub</a>  
+        <a href="https://www.linkedin.com/in/jiatong-he-687b34148/" target="_blank">LinkedIn</a><br/>
+      Jiatong He</p>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script>
+  if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+    (function(){
+      window.scrollReveal = new scrollReveal({reset: true});
+    })();
+  };
+</script> 
+  </body>
+</html>

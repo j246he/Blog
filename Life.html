@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Melody Blog-Volunteer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/blog.css">
+    <script src="js/scrollReveal.js"></script>
+    <script src="js/Myblog.js"></script>
+  </head>
+  <body>
+    <header>
+    	<h1 class="left" data-scroll-reveal="enter right over 1s">Melody Blog-Volunteer</h1>
+          <ul class="nav nav-pills justify-content-end">
+    	
+        	<li class="nav-item">
+            	<a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="study.html">Study Notes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Projects.html">Projects</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Life Recordings</a>
+              <div class="dropdown-menu">
+              <a class="dropdown-item active" href="Life.html">Volunteer Activities</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="article.html">My Articles</a>
+              </div>
+            </li>
+
+          </ul>
+			
+
+    </header>
+    
+    <main>
+    <ul class="cbp_tmtimeline">
+     
+
+      <li>
+            <time class="cbp_tmtime" ><span>05</span> <span>2015</span></time>
+            <div class="cbp_tmicon"></div>
+            <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+              <h2>Course Consultant, Shanghai Jiwei Translation Co.,Ltd, Changchu, China</h2>
+               <p><span class="blogpic"><img class="imglife" id="jiwei" src="img/jiwei.jpg" onclick="bigger(event)"></span>
+                Led a group with 20 team members to popularize interpretation courses and CATTI certificate related courses twice a week in university campuses<br>
+      The performance ranked top 10% in the company</p>
+                             
+            </div>
+          </li>   
+
+           <li>
+            <time class="cbp_tmtime" ><span>01</span> <span>2015</span></time>
+            <div class="cbp_tmicon"></div>
+            <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+              <h2>Volunteer, Global Citizen Program AIESEC, Bogota, Colombia</h2>
+               <p><span class="blogpic"><img class="imglife" id="AIESEC" src="img/AIESEC.jpg" onclick="bigger(event)"></span>
+                Accompanied more than 300 people with Down syndrome<br>
+      Designed games to help patients with physical fitness<br>
+      Assisted teachers to help patients speak smoothly<br>
+      Showed patients Chinese cultural characteristics</p>
+                             
+            </div>
+          </li>
+
+          <li>
+            <time class="cbp_tmtime"><span>07</span> <span>2014</span></time>
+            <div class="cbp_tmicon"></div>
+            <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+              <h2>Teacher, Minquan Primary Central School, Wuwei, China</h2>
+              <p><span class="blogpic"><img class="imglife" id="teacher" src="img/teacher.jpg" onclick="bigger(event)"></span>
+                Taught 250 students from five grades<br>
+                Planned and organized a large-scale art show with a duration of 3 hours
+          </p>
+                          
+            </div>
+          </li>
+
+             
+      
+          
+
+          <li>
+            <time class="cbp_tmtime" ><span>07</span> <span>2014</span></time>
+            <div class="cbp_tmicon"></div>
+            <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+              <h2>Minister of External Liaison Department, JLU Chinese Volunteer Federation, Changchun, China</h2>
+               <p><span class="blogpic"><img class="imglife" id="Volunteer" src="img/Volunteer.jpg" onclick="bigger(event)"></span>
+                Planned and organized voluntary teaching the program in summer holiday<br>
+                Organazed the selection of volunteers and attracted about one thousand college students to register<br>
+              Trained more than 100 volunteers for the program</p>
+                             
+            </div>
+          </li>
+           
+                    
+        </ul>
+
+        <div class="motai" id="motai">
+          <span class="close" id="close" onclick="closepic()">×</span>
+          <img class="modalpic" id="modalpic">
+          <!-- <div id="caption"></div> -->
+        </div>
+
+    </main><!-- .row -->
+    <footer>
+      <p>Contact me: hejiatong.melody.jlu@gmail.com
+        <a href="https://github.com/j246he" target="_blank">GitHub</a>  
+        <a href="https://www.linkedin.com/in/jiatong-he-687b34148/" target="_blank">LinkedIn</a><br/>
+      Jiatong He</p>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script>
+  if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+    (function(){
+      window.scrollReveal = new scrollReveal({reset: true});
+    })();
+  };
+</script> 
+  </body>
+</html>

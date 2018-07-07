@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Melody Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/blog.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/scrollReveal.js"></script>
+    <script src = "js/Myblog.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="left" data-scroll-reveal="enter right over 1s">Melody Blog</h1>
+
+          <ul class="nav nav-pills justify-content-end">
+            
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="study.html">Study Notes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Projects.html">Projects</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Life Recordings</a>
+              <div class="dropdown-menu">
+              <a class="dropdown-item" href="Life.html">Volunteer Activities</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="article.html">My Articles</a>
+              </div>
+            </li>
+            
+          
+          </ul>
+          
+    </header>
+    
+    <main>
+      <!-- Content -->
+      
+
+      <section class="pic_left">
+        <p>Jiatong He, the designer of the blog, is currently a graduate student in the department of <a href="https://uwaterloo.ca/electrical-computer-engineering/" target="_blank">Electrical and Computer Engineering</a> in the <a href="https://uwaterloo.ca/" target="_blank"> University of Waterloo</a>. The blog was designed since May 24th, 2018, which coded in <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b> initially, and developed in <b>Bootstrap</b> and other frameworks. The purpose of setting up the blog at the beginning was to apply the knowledge I learned of web development into practice, and gradually evolved to record my own study, life, and interests.</p>
+        
+        </section>
+        
+      
+
+      <section class="pic_right" data-scroll-reveal="enter bottom over 1s after 0.5s">
+        <img class="imglife" id="mypic" src="img/hjt.jpg" alt="Melody's picture" onclick="bigger(event)">
+        <h3>Jiatong He</h3>
+      </section>
+
+      <div class="motai" id="motai">
+          <span class="close" id="close" onclick="closepic()">×</span>
+          <img class="modalpic" id="modalpic">
+          <!-- <div id="caption"></div> -->
+        </div>
+
+        <section id="summary">
+          <h3>Summary of Qualifications</h3>
+        <ul>
+        <li><b>4+</b> years experience in <b>C</b> and <b>C++</b> programs and object-oriented design</li>
+        <li>Competent with large-scale <b>Python</b> and <b>Java</b></li>
+        <li><b>1+</b> year experience in <b>web design</b></li>
+        <li>Experienced developing system software in <b>Linux</b> environment with <b>Git</b> and <b>APIs</b></li>
+        <li>Other Technical Skills: MATLAB, Android, MySQL, Bash, LabVIEW</li>
+        </ul>
+
+        </section>
+
+        
+
+      <section id="education">
+         <h3>Education</h3>
+        <ul>
+          <li>
+            <a href="https://uwaterloo.ca/" target="_blank"> University of Waterloo</a>, Waterloo, Canada<span class="right">09/2017-present</span>
+            <br>Master of Engineering degree in <a href="https://uwaterloo.ca/electrical-computer-engineering/" target="_blank">Electrical and Computer Engineering</a>
+            <br>GPA: 92/100
+          </li>
+          <li>
+            <a href="http://www.jlu.edu.cn/" target="_blank">Jilin University</a>, Changchun, China<span class="right">08/2013-06/2017</span>
+            <br>Bachelor of Engineering degree in Measurement Control Technology and Instruments
+            <br>GPA: 90.37/100, ranked 3 out of 83
+          </li>
+        </ul>
+      
+      </section>
+
+
+    </main><!-- .row -->
+
+    <footer>
+      <p>Contact me: hejiatong.melody.jlu@gmail.com
+        <a href="https://github.com/j246he" target="_blank">GitHub</a>  
+        <a href="https://www.linkedin.com/in/jiatong-he-687b34148/" target="_blank">LinkedIn</a><br/>
+      Jiatong He</p>
+    </footer>
+<script>
+  if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+    (function(){
+      window.scrollReveal = new scrollReveal({reset: true});
+    })();
+  };
+</script> 
+  </body>
+</html>
