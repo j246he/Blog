@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<!-- <link rel="stylesheet" href="css/star.css">
+	<script src="js/star.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="css/star.css">
+	<script type="text/javascript" src="js/star.js"></script>
+</head>
+<body>
+	<div id="div1">
+		<center id="intro">
+			<input id="start" type="button" value="start game" onclick="startgame()"><br/>when there are more than 20 stars, game over. The longer the time, the higher the score.
+		</center>
+		
+		<center id="buttonPlay">
+			<input id="pause" type="button" value="pause" onclick="pause()">
+			<input id="stop" type="button" value="stop/restart" onclick="restart()">
+		</center>
+		<div id="someWords">
+			You has played for <span id="game">0</span> seconds.
+			<span id="gameBorder"><span id="gameProcess"></span></span>
+		</div>	
+	</div>
+	
+</body>
+</html>

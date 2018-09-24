@@ -1,0 +1,37 @@
+#div1{
+	height: 80px;
+	margin: 0 50px 0 50px;
+	border: 1px solid black;
+	text-align: center;
+	vertical-align:middle;
+}
+#buttonPlay{
+	text-align: center;
+}
+#start{
+	margin: 0 auto;
+}
+#pause,#stop{
+	margin:0 50px 0 50px;
+}
+#timeBorder{
+	border: 1px solid black;
+}
+#gameBorder{
+	width: 100px;
+	height: 20px;
+	border: 1px solid black;
+	display: inline-block;
+	text-align: left;
+	vertical-align:middle;
+}
+#gameProcess{
+	height: 20px;
+	background: black;
+	display: inline-block;
+	text-align: left;
+	position: absolute;
+}
+/*.user_select{
+	user-select: none;
+}*/

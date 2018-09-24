@@ -3,68 +3,93 @@
   <head>
     <meta charset="utf-8">
     <title>Melody Blog-Projects</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/blog.css">
     <script src="js/scrollReveal.js"></script>
   </head>
   <body>
     <header>
-          <h1 class="left" data-scroll-reveal="enter right over 1s">Melody Blog-Projects</h1>
-          <ul class="nav nav-pills justify-content-end">
-            
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div data-scroll-reveal="enter right over 1s">
+          <a class="navbar-brand" href="index.html">Melody Blog</a>
+        </div>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <li class="nav-item">
-              <a class="nav-link" href="study.html">Study Notes</a>
-            </li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav right">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="study.html">Study</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Projects.html">Projects</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link active" href="Projects.html">Projects</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Life Recordings</a>
-              <div class="dropdown-menu">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Personal
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="Life.html">Volunteer Activities</a>
-              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="dance.html">Dance</a>
               <a class="dropdown-item" href="article.html">My Articles</a>
-              </div>
-            </li>
-            
-          
-          </ul>
+              <!-- <div class="dropdown-divider"></div> -->
+              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Comment</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li> -->
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+      </nav>
          
     </header>
     
     <main>
-          <section>
-<h3> <a href="https://github.com/j246he/blockMoveGame" target="_blank">Block Move Game program</a>(Java/C++ and Qt)<span class="right">12/2017-05/2018</span></h3>
-<ul>
-  <li>A block move game in which players need to arrange blocks in order programmed in two versions</li>
-  <li>One extended JFrame class and another used C++ and Qt framework to implement mouse control, timer and user interface</li>
-</ul>
-    </section>
-    
+        <section>
+        <h3><a href="starsgame.html" target="_blank">Star Game</a>(JavaScript)<span class="right">07/2018-07/2018</span></h3>
+        <ul>
+          <li>A small pure JS program in which players click the star to eliminate it and get scores.</li>
+        </ul>
+      </section>
       <section>
-<h3> <a href="https://github.com/j246he/Soldier-Game" target="_blank">Soldier Game application on Android</a>(Java)<span class="right">12/2017-01/2018</span></h3>
-<ul>
-  <li>A improved 2048 game with interface display, touch screen control and score accumulation</li>
-  <li>Used Android interfaces and Java classed to implement the design and control of the card</li>
-  <li>Successfully stored users’ scores in system without error and correctly refresh timely</li>
-</ul>
+        <h3><a href="https://github.com/j246he/blockMoveGame" target="_blank">Block Move Game program</a>(Java/C++ and Qt)<span class="right">12/2017-05/2018</span></h3>
+        <ul>
+          <li>A block move game in which players need to arrange blocks in order programmed in two versions</li>
+          <li>One extended JFrame class and another used C++ and Qt framework to implement mouse control, timer and user interface</li>
+        </ul>
+      </section>
+      <section>
+        <h3> <a href="https://github.com/j246he/Soldier-Game" target="_blank">Soldier Game application on Android</a>(Java)<span class="right">12/2017-01/2018</span></h3>
+        <ul>
+          <li>A improved 2048 game with interface display, touch screen control and score accumulation</li>
+          <li>Used Android interfaces and Java classed to implement the design and control of the card</li>
+          <li>Successfully stored users’ scores in system without error and correctly refresh timely</li>
+        </ul>
       </section>
 
 
 
     <section>
-<h3><a href="https://github.com/j246he/Security-camera-installation-project" target="_blank">Security camera installation project</a> (Python and C++)<span class="right">09/2017-11/2017</span></h3>
-<ul>
-<li>Solved road generation, road recognition and camera installation location selection problems</li>
-<li>Used multi-process and multi-threaded IPC technology to combine and run different files in parallel</li>
-<li>Successfully executed in Linux and optimized the number of cameras to install</li>
-</ul>
+      <h3><a href="https://github.com/j246he/Security-camera-installation-project" target="_blank">Security camera installation project</a> (Python and C++)<span class="right">09/2017-11/2017</span></h3>
+      <ul>
+      <li>Solved road generation, road recognition and camera installation location selection problems</li>
+      <li>Used multi-process and multi-threaded IPC technology to combine and run different files in parallel</li>
+      <li>Successfully executed in Linux and optimized the number of cameras to install</li>
+      </ul>
     </section>
 
     <section>
@@ -78,18 +103,18 @@
     </section>
 
     <section>
-<h3>Design of a temperature data acquisition system (C)<span class="right">09/2016-10/2016</span></h3>
-<ul>
-<li>Used Freescale single chip microcomputer/MCU to send commands to bring up temperature sensor DS1820 and acquire, analyze and display thousands of given temperature data timely</li>
-<li>Designed schematics, and used lab equipment to weld PCB board, validate and troubleshoot</li>
-</ul>
+      <h3>Design of a temperature data acquisition system (C)<span class="right">09/2016-10/2016</span></h3>
+      <ul>
+      <li>Used Freescale single chip microcomputer/MCU to send commands to bring up temperature sensor DS1820 and acquire, analyze and display thousands of given temperature data timely</li>
+      <li>Designed schematics, and used lab equipment to weld PCB board, validate and troubleshoot</li>
+      </ul>
     </section>
 
     <section>
-<h3>Design of a variable-speed pump based on Bluetooth (C)<span class="right">04/2015-05/2015</span></h3>
-<ul>
-<li>Sent commands through Bluetooth to Freescale MCU for the purpose of controlling the speed of pumping and the direction of rotation</li>
-</ul>
+      <h3>Design of a variable-speed pump based on Bluetooth (C)<span class="right">04/2015-05/2015</span></h3>
+      <ul>
+      <li>Sent commands through Bluetooth to Freescale MCU for the purpose of controlling the speed of pumping and the direction of rotation</li>
+      </ul>
     </section>
 
 
@@ -101,15 +126,15 @@
         <a href="https://www.linkedin.com/in/jiatong-he-687b34148/" target="_blank">LinkedIn</a><br/>
       Jiatong He</p>
     </footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script>
-  if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
-    (function(){
-      window.scrollReveal = new scrollReveal({reset: true});
-    })();
-  };
-</script> 
+      if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+        (function(){
+          window.scrollReveal = new scrollReveal({reset: true});
+        })();
+      };
+    </script> 
   </body>
 </html>

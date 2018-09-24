@@ -9,32 +9,52 @@
   </head>
   <body>
     <header>
-          <h1 class="left" data-scroll-reveal="enter right over 1s">Melody Blog-Articles</h1>
-          <ul class="nav nav-pills justify-content-end">
-            
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div data-scroll-reveal="enter right over 1s">
+          <a class="navbar-brand" href="index.html">Melody Blog</a>
+        </div>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <li class="nav-item">
-              <a class="nav-link active" href="study.html">Study Notes</a>
-            </li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav right">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="study.html">Study</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Projects.html">Projects</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="Projects.html">Projects</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Life Recordings</a>
-              <div class="dropdown-menu">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Personal
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="Life.html">Volunteer Activities</a>
-              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="dance.html">Dance</a>
               <a class="dropdown-item" href="article.html">My Articles</a>
-              </div>
-            </li>
-            
-          
-          </ul>
+              <!-- <div class="dropdown-divider"></div> -->
+              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Comment</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li> -->
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+      </nav>
           
     </header>
     
